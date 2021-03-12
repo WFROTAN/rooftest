@@ -3,8 +3,12 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+//import Features from '../components/Features'
+//import BlogRoll from '../components/BlogRoll'
+
+import Image1 from '../../static/img/image1.webp'
+import Image2 from '../../static/img/image2.webp'
+import Image3 from '../../static/img/image3.webp'
 
 export const IndexPageTemplate = ({
   image,
@@ -24,6 +28,7 @@ export const IndexPageTemplate = ({
         })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
+        height: '80vh',
       }}
     >
       <div
@@ -66,43 +71,40 @@ export const IndexPageTemplate = ({
     </div>
     <section className="section section--gradient">
       <div className="container">
-        <div className="section">
+        <div className="section section1">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-20 is-offset-1 service-column">
               <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
+                <div className="services">
+                  <h3 className="has-text-weight-semibold is-size-2">Our Services</h3>
+                  <div className="services-content">
+                    <div className="services-content__card">
+                      <div className="card-image"><img src={Image1} alt="Roof maintenance"/></div>
+                      <div className="card-content">
+                        <h3>Roof Maintenance</h3>
+                        <div className="card-description">
+                          Magna aliqa enim sed ipsum nisi ainy veniam quis nostrul aliqua enim lorem ipsum gui dolor sit amet tempor.
+                        </div>
+                      </div>
+                    </div>
+                    <div className="services-content__card">
+                      <div className="card-image"><img src={Image2} alt="Roof Inspection"/></div>
+                      <div className="card-content">
+                        <h3>Roof Inspection</h3>
+                        <div className="card-description">
+                          Magna aliqa enim sed ipsum nisi ainy veniam quis nostrul aliqua enim lorem ipsum gui dolor sit amet tempor.
+                        </div>
+                      </div>
+                    </div>
+                    <div className="services-content__card">
+                      <div className="card-image"><img src={Image3} alt="Insulation and Reparis"/></div>
+                      <div className="card-content">
+                        <h3>Insulation & Repairs</h3>
+                        <div className="card-description">
+                          Magna aliqa enim sed ipsum nisi ainy veniam quis nostrul aliqua enim lorem ipsum gui dolor sit amet tempor.
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

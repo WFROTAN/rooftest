@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
+title: COMPLETE ROOFING SOLUTIONS
+image: /img/roof1.webp
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: Professional exterior improvement services for your property.
 mainpitch:
   title: Why Kaldi
   description: >
