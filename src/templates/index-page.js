@@ -79,7 +79,9 @@ export const IndexPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">Our Services</h3>
                   <div className="services-content">
                     <div className="services-content__card">
-                      <div className="card-image"><img src={Image1} alt="Roof maintenance"/></div>
+                      <div className="card-image">
+                        <img style={{width: '100%', height: '100%'}} src={Image1} alt="Roof Inspection"/>
+                      </div>
                       <div className="card-content">
                         <h3>Roof Maintenance</h3>
                         <div className="card-description">
@@ -88,7 +90,7 @@ export const IndexPageTemplate = ({
                       </div>
                     </div>
                     <div className="services-content__card">
-                      <div className="card-image"><img src={Image2} alt="Roof Inspection"/></div>
+                      <div className="card-image"><img style={{width: '100%', height: '100%'}} src={Image2} alt="Roof Inspection"/></div>
                       <div className="card-content">
                         <h3>Roof Inspection</h3>
                         <div className="card-description">
@@ -97,7 +99,7 @@ export const IndexPageTemplate = ({
                       </div>
                     </div>
                     <div className="services-content__card">
-                      <div className="card-image"><img src={Image3} alt="Insulation and Reparis"/></div>
+                      <div className="card-image"><img style={{width: '100%', height: '100%'}} src={Image3} alt="Insulation and Reparis"/></div>
                       <div className="card-content">
                         <h3>Insulation & Repairs</h3>
                         <div className="card-description">
